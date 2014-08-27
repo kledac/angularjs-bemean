@@ -1,4 +1,4 @@
-var Model = require("./../models/beers");
+var Model = require("./../models/beer");
 var msg = '';
 
 
