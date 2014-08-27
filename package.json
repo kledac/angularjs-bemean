@@ -1,0 +1,15 @@
+{
+  "name": "Workshop-pelotas",
+  "version": "1.0.0",
+  "main": "Hello-html.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.8.5",
+    "mongoq": "^0.2.3"
+  },
+  "devDependencies": {}
+}
