@@ -11,5 +11,10 @@ block content
   p.form-label Category: #{beer.category}
   p.form-label Description:  #{beer.description}
         
-  a(href='/beers/#{beer._id}/edit') Edit
+  ul
+    li
+        a(href='/beers/#{beer._id}/edit') Edit
+    li
+        a(href='/beers/#{beer._id}/delete') Delete
+  
     
