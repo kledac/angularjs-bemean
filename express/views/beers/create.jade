@@ -1,0 +1,30 @@
+extends ../layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  form(enctype='x-www-form-urlencoded', method='post', action='/api/beers')
+      label(for='name') 
+        span.form-label Name: 
+        input(type='text', name='name')
+
+      label(for='price') 
+        span.form-label Price: 
+        input(type='text', name='price')
+
+      label(for='alcohol') 
+        span.form-label Alcohol: 
+        input(type='text', name='alcohol')
+
+      label(for='category') 
+        span.form-label Category: 
+        input(type='text', name='category')
+
+      label(for='description') 
+        span.form-label Description: 
+        input(type='text', name='description')
+
+      input(type='submit', value='Create')
+
+ 
+ 

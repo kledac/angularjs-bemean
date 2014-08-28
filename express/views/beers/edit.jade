@@ -1,0 +1,31 @@
+extends ../layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  form(enctype='x-www-form-urlencoded', method='PUT', action='/api/beers/#{beer._id}')
+      label(for='name') 
+        span.form-label Name: 
+        input(type='text', name='name', value='#{beer.name}')
+
+      label(for='price') 
+        span.form-label Price: 
+        input(type='text', name='price', value='#{beer.price}')
+
+      label(for='alcohol') 
+        span.form-label Alcohol: 
+        input(type='text', name='alcohol', value='#{beer.alcohol}')
+
+      label(for='category') 
+        span.form-label Category: 
+        input(type='text', name='category', value='#{beer.category}')
+
+      label(for='description') 
+        span.form-label Description: 
+        input(type='text', name='description', value='#{beer.description}')
+
+      input(type='submit', value='UPDATE')
+      input(type='hidden', name='_method', value='PUT')
+
+ 
+ 
