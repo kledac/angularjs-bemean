@@ -3,7 +3,7 @@ extends ../layout
 block content
   h1= title
   p Welcome to #{title}
-  form(enctype='x-www-form-urlencoded', method='PUT', action='/api/beers/#{beer._id}')
+  form(enctype='x-www-form-urlencoded', method='POST', action='/api/beers/#{beer._id}')
       label(for='name') 
         span.form-label Name: 
         input(type='text', name='name', value='#{beer.name}')
